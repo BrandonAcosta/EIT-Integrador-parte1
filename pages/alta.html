@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alta de productos</title>
+
+    <link rel="stylesheet" href="../styles/main.css" class="css">
+</head>
+<body class="product-submit-body">
+    <header class="header">
+        <nav class="navbar">
+            <a class="navbar-brand nav-link" href="../index.html">Juguetería Cósmica</a>
+            <button class="btn-burguer" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="navbar-menu">
+                <ul class="navbar-list">
+                    <li class="nav-item">
+                        <a class="nav-link " href="../pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="../pages/alta.html">Alta de productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/contactanos.html">Contactanos</a>
+                    </li>
+                </ul>
+
+                <form class="nav-search-container"  role="search">
+                    <input class="nav-search" type="search" placeholder="Busqueda" aria-label="barra de busqueda">
+                    <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="product-submit-area">
+        
+        <h2 class="form-title">Carga de productos</h2>
+        
+        <form class="product-submit-form" onsubmit="onSubmit(event)">
+            <input class="product-input isRequired" type="text" name="product-name" id="product-name" placeholder="Ingrese nombre del producto" minlength="3" required>
+            <input class="product-input isRequired" type="number" name="product-price" id="product-price" placeholder="Ingrese precio del producto" min="0" required>
+            <input class="product-input isRequired" type="number" name="product-stock" id="product-stock" placeholder="Ingrese stock del producto" min="1" required>
+            <input class="product-input" type="text" name="product-brand" id="product-brand" placeholder="Ingrese marca del producto" maxlength="20">
+            <input class="product-input isRequired" type="text" name="product-category" id="product-category" placeholder="Ingrese categoría del producto" minlength="3" required>
+            <input class="product-input isRequired" type="text" name="product-description-st" id="product-description-st" placeholder="Ingrese una descripción corta" maxlength="120" required>
+            <textarea class="product-input" name="product-description-lg" id="product-description-lg" cols="30" rows="10" placeholder="Ingrese una descripción larga" minlength="60" maxlength="320"></textarea>
+            
+            <div class="checkbox-container">
+                <input class="product-input type-checkbox" type="checkbox" name="product-shipping-free" id="product-shipping-free">
+                <label class="product-imput-label" for="product-shipping-free">Envío sin cargo</label>
+            </div>
+            
+            <div class="age-form-container">
+                <input class="product-input" type="number" name="min-age" id="min-age" placeholder="Edad mínima" min="0">
+                <input class="product-input" type="number" name="max-age" id="max-age" placeholder="Edad máxima" min="1">
+            </div>
+            
+            <div class="product-img-container">
+                <input class="product-input isRequired" type="file" name="product-image" id="product-image" required>
+                <label class="product-imput-label" for="product-image">Imagen del producto</label>
+            </div>
+            <button class="bnt-product-submit">Registrar producto</button>
+            <p id="err-message"></p>
+        </form>
+    </section>
+
+
+    <footer class="main-footer">
+        <div>
+            <p class="footer-text">Buenos Aires - Argentina</p>
+        </div>
+        <div>
+            <p class="footer-text"><strong>Juguetería Cósmica - 2024</strong></p>
+        </div>
+        <span class="clock-container">
+            <p class="footer-text" id="clock">00:00:00</p>
+        </span>
+    </footer>
+
+    <script src= "https://kit.fontawesome.com/7b0d706818.js" crossorigin="anonymous"></script>
+    <script src= "../js/main.js" ></script>
+    <script src= "../js/validations.js" ></script>
+</body>
+</html>

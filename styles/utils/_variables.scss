@@ -1,0 +1,48 @@
+
+//--- Colors pallett 1---
+$deep-sky-blue: #00bbf9ff;
+$delft-blue: #3d405bff;
+$amethyst: #9b5de5ff;
+$brilliant-rose: #f15bb5ff;
+$maize: #fee440ff;
+$eggshell: #f4f1deff;
+
+//--- Colors Pallet2 ---
+$burnt-sienna: #e07a5fff;
+$cambridge-blue: #81b29aff;
+$sunset: #f2cc8fff;
+
+$font-lg: 2rem;
+$font-md: 1.5rem;
+$font-sm: 1.2rem;
+
+$bp-large : 1200px;
+$bp-medium : 768px;
+
+//--- base variables ---
+$body-bg-color: $delft-blue ;
+$body-bg-color2: $deep-sky-blue;
+$body-bg-color3: $brilliant-rose;
+
+//--- cards varibles
+$back-card-color : $eggshell;
+
+//--- navbar variables ---
+$nav-height : 80px;
+$nav-height-sm : 60px;
+
+$header-bg : $deep-sky-blue;
+$header-bg-sm :$amethyst;
+$header-link-color: $eggshell;
+
+//--- footer varibales ---
+$footer-height: $font-md;
+$footer-text-color : $eggshell;
+
+
+$contact-btn-color: $deep-sky-blue;
+$c-bezier-anim : cubic-bezier(.1,.22,.8,1.13);
+
+$bg-image-contact: url(../../assets/img/contact-bg.jpg);
+$bg-image-product-submit: url(../../assets/img/Product-submit-bg.jpg);
+$bg-image-aboutus: url(../../assets/img/about-us2-bg.jpg);

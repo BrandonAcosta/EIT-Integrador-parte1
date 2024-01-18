@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juguetería Cósmica</title>
+
+    <link rel="stylesheet" href="./styles/main.css" class="css">
+</head>
+<body class="home-body">
+    <header class="header">
+        <nav class="navbar">
+            <a class="navbar-brand nav-link" href="./index.html">Juguetería Cósmica</a>
+            <button class="btn-burguer" aria-label="Abrir menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="navbar-menu">
+                <ul class="navbar-list">
+                    <li class="nav-item">
+                        <a class="nav-link " href="./pages/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="./pages/alta.html">Alta de productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contactanos.html">Contactanos</a>
+                    </li>
+                </ul>
+
+                <form class="nav-search-container"  role="search">
+                    <input class="nav-search" type="search" placeholder="Busqueda" aria-label="barra de busqueda">
+                    <button class="btn-search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-catalogue"> 
+        <h1>Listado de productos</h1>
+        <div class="card-container">
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div id="item-image" class="flip-card-front" 
+                        style="background-image: url(./assets/img/Luffy-collector-figure.jpg);">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="item-name">Figura de OnePiece: Luffy</h3>
+                        <p id="item-description">
+                            Figura de colección de Luffy, de la serie animada "OnePiece"
+                        </p>
+                        <div>
+                            <span id="item-price">$32.000</span>
+                            <button class="btn-shopCart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div id="item-image" class="flip-card-front" 
+                        style="background-image: url(./assets/img/D&D-board-game.jpg);">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="item-name">Dragones y Mazmorras: La ira de Ashardalon</h3>
+                        <p id="item-description">
+                            Juego de mesa de la famosa saga Dragones y Mazmorras
+                        </p>
+                        <div>
+                            <span id="item-price">$15.000</span>
+                            <button class="btn-shopCart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div id="item-image" class="flip-card-front" 
+                        style="background-image: url(./assets/img/PS4-legoAvengers.jpg);">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="item-name">Videojuego Lego: Vengadores</h3>
+                        <p id="item-description">
+                            Videojuego para PlayStation 4, de la Saga Lego: Vengadores
+                        </p>
+                        <div>
+                            <span id="item-price">$7.000</span>
+                            <button class="btn-shopCart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div id="item-image" class="flip-card-front" 
+                        style="background-image: url(./assets/img/qatar2022-worldCup-Ball.jpg);">
+                    </div>
+                    <div class="flip-card-back">
+                        <h3 id="item-name">Balón Qatar2022 Adidas</h3>
+                        <p itemid="item-description">
+                            Balón oficial del mundial de fútbol 2022
+                        </p>
+                        <div>
+                            <span id="item-price">$45.000</span>
+                            <button class="btn-shopCart"><i class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <footer class="main-footer">
+        <div>
+            <p class="footer-text">Buenos Aires - Argentina</p>
+        </div>
+        <div>
+            <p class="footer-text"><strong>Juguetería Cósmica - 2024</strong></p>
+        </div>
+        <span class="clock-container">
+            <p class="footer-text" id="clock">00:00:00</p>
+        </span>
+    </footer>
+    <!-- <script></script> -->
+    <script src="https://kit.fontawesome.com/7b0d706818.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

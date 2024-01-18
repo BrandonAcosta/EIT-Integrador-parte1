@@ -1,0 +1,22 @@
+
+// import order = -Utils -vendors -base -layout -components -pages -theme
+@import "./utils/fonts";
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/animations";
+
+@import "./base/bases";
+
+@import "./layout/card-container";
+
+@import "./components/header";
+@import "./components/buttons";
+@import "./components/footer";
+@import "./components/cards";
+@import "./components/form";
+@import "./components/contact-form";
+
+@import "./pages/home";
+@import "./pages/product-submit";
+@import "./pages/contact-page";
+@import "./pages/about-us";

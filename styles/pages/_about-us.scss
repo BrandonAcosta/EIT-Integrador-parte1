@@ -1,0 +1,4 @@
+.about-us-body{
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgb(0, 0, 0, 0.9)), $bg-image-aboutus;
+    @include body-properties();
+}

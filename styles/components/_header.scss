@@ -1,0 +1,137 @@
+
+.header{
+    background-color: $header-bg;
+    height: $nav-height;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: $bp-large;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: $header-link-color;
+    text-decoration: none;
+
+    &:not(.navbar-brand){
+        border-radius: 3px;
+        padding: 0.25rem 0.5rem;
+
+        &:hover{
+            background-color: darken($color: $header-bg, $amount: 10);
+            transition: 0.5s;
+        }
+    }
+}
+
+.navbar-brand{
+    font-family: 'Gluten';
+    font-weight: bold;
+    font-size: $font-lg;
+    padding: 0.25rem 1rem;
+    line-height: $nav-height;
+    text-wrap: nowrap;
+}
+
+.navbar-menu{
+    display: flex;
+    margin-right: 0.25rem; 
+    z-index: 4;
+    .navbar-list{
+        display: flex;
+        margin-right: 0.5rem;
+        list-style: none; 
+    }
+}
+
+.nav-item{
+    font-size: $font-sm;
+    margin: 0 10px;
+    line-height: $nav-height;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-search-container{
+    line-height: $nav-height;
+    margin: 0 1rem;
+    text-wrap: nowrap;
+}
+
+.btn-burguer{
+    color: darken($color: $header-bg, $amount: 20);
+    background: none;
+    border: none;
+    font-size: $font-lg;
+    padding: 0 20px;
+    line-height: $nav-height-sm;
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: $bp-large){
+    .header{
+        height: $nav-height-sm;
+        position: fixed;
+        width: 100%;
+    }
+
+    .navbar-brand{
+        font-size: $font-md;
+        line-height: $nav-height-sm;
+        padding: 0 0.5rem;
+    }
+
+    .navbar-menu{
+        flex-direction: column;
+        align-items: center;
+        background-color: $header-bg-sm;
+        
+        position: fixed;
+        left: 0;
+        top: $nav-height-sm;
+        z-index: 1;
+        
+        width: 100%;
+        height: calc(100% - $nav-height-sm);
+        overflow-y: auto;
+
+        left: 100%;
+        transition: left 0.3s;
+        .navbar-list{
+            flex-direction: column;
+            margin-right: 0.25rem; 
+        }
+    }
+
+    .navbar_visible{
+        left: 0;
+    }
+
+    .nav-item{
+        line-height: $nav-height-sm;
+    }
+
+    .nav-link{
+        &:not(.navbar-brand){
+            &:hover{
+                background: none;
+                color: $header-bg;
+            }
+        }
+    }
+
+    .btn-burguer{
+        display: block;
+        &:focus:not(:focus-visible){
+            outline: none;
+        }
+    }
+}
